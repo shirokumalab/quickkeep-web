@@ -43,7 +43,7 @@ body {
 }
 
 main {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
   padding: 34px 0 52px;
 }
@@ -93,7 +93,7 @@ footer {
 }
 
 .site-header {
-  width: min(1160px, calc(100% - 32px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
   padding: 18px 0 14px;
   display: flex;
@@ -138,12 +138,12 @@ footer {
 }
 
 .hero {
-  min-height: 680px;
+  min-height: 720px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 440px);
-  gap: 44px;
+  grid-template-columns: minmax(560px, 0.95fr) minmax(520px, 0.85fr);
+  gap: clamp(54px, 7vw, 116px);
   align-items: center;
-  padding: 52px 0 60px;
+  padding: 60px 0 72px;
 }
 
 .home-page .hero,
@@ -155,7 +155,7 @@ footer {
 }
 
 .hero-copy {
-  max-width: 660px;
+  max-width: none;
 }
 
 .hero-logo {
@@ -175,7 +175,7 @@ footer {
 }
 
 .hero h1 {
-  font-size: clamp(44px, 6.4vw, 72px);
+  font-size: clamp(56px, 6.2vw, 96px);
   line-height: 1.04;
   letter-spacing: 0;
   margin: 0 0 24px;
@@ -190,7 +190,7 @@ footer {
 
 .lead {
   font-size: clamp(17px, 2vw, 21px);
-  max-width: 640px;
+  max-width: 760px;
 }
 
 .hero-actions,
@@ -230,7 +230,7 @@ footer {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 26px;
-  max-width: 650px;
+  max-width: 780px;
 }
 
 .hero-meta span {
@@ -249,8 +249,8 @@ footer {
 }
 
 .visual-stage {
-  width: min(100%, 460px);
-  min-height: 690px;
+  width: min(100%, 620px);
+  min-height: 760px;
   display: grid;
   place-items: center;
   border-radius: 42px;
@@ -273,7 +273,7 @@ footer {
 }
 
 .phone-frame {
-  width: min(100%, 390px);
+  width: min(100%, 430px);
   aspect-ratio: 0.52;
   border: 10px solid #101412;
   border-radius: 44px;
@@ -560,7 +560,7 @@ footer {
 }
 
 .site-footer {
-  width: min(1040px, calc(100% - 32px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
   padding: 12px 0 36px;
   display: flex;
@@ -568,7 +568,34 @@ footer {
   gap: 12px;
 }
 
+@media (max-width: 1180px) {
+  main,
+  .site-header,
+  .site-footer {
+    width: min(100% - 48px, 1040px);
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 460px);
+    gap: 46px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 6vw, 72px);
+  }
+
+  .visual-stage {
+    min-height: 660px;
+  }
+}
+
 @media (max-width: 860px) {
+  main,
+  .site-header,
+  .site-footer {
+    width: min(100% - 32px, 720px);
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
