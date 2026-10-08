@@ -14,6 +14,7 @@
   --dangerless-coral: #eb7f6e;
   --shadow: 0 24px 70px rgba(23, 32, 29, 0.10);
   --page-gutter: 64px;
+  --header-offset: 78px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +54,7 @@ body {
 
 body {
   margin: 0;
+  padding-top: var(--header-offset);
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
   color: var(--text);
   background:
@@ -123,8 +125,10 @@ footer {
   width: 100%;
   margin: 0;
   padding: 18px max(calc(var(--page-gutter) / 2), calc((100vw - 1440px) / 2)) 14px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -195,7 +199,7 @@ footer {
 .home-page section,
 .sub-page .page-hero,
 .sub-page section {
-  scroll-margin-top: 92px;
+  scroll-margin-top: calc(var(--header-offset) + 18px);
 }
 
 .hero-copy {
@@ -630,8 +634,8 @@ footer {
 }
 
 .sub-page .page-hero h1 {
-  font-size: clamp(44px, 7vw, 86px);
-  line-height: 1.08;
+  font-size: clamp(34px, 4.8vw, 58px);
+  line-height: 1.14;
   letter-spacing: 0;
   margin-bottom: 18px;
 }
@@ -763,6 +767,7 @@ footer {
 @media (max-width: 560px) {
   :root {
     --page-gutter: 32px;
+    --header-offset: 138px;
   }
 
   main,
