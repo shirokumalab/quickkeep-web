@@ -532,15 +532,14 @@ footer {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, max-content));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px 12px;
   margin-top: 26px;
-  max-width: 780px;
-  align-items: center;
+  max-width: 560px;
 }
 
 .hero-meta span {
-  min-height: 34px;
+  min-height: 42px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -552,7 +551,7 @@ footer {
   padding: 7px 14px;
   background: rgba(255, 255, 255, 0.52);
   animation: chipLift 5.6s ease-in-out infinite;
-  white-space: nowrap;
+  text-align: center;
 }
 
 .hero-meta span:nth-child(2) {
@@ -1332,9 +1331,9 @@ footer {
   }
 
   .hero-meta span {
+    min-height: 64px;
     border-radius: 12px;
-    justify-content: flex-start;
-    white-space: normal;
+    padding: 10px 12px;
   }
 
   .hero-meta {
