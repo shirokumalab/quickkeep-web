@@ -1353,10 +1353,30 @@ footer {
 
   .ai-points {
     grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--line);
   }
 
   .ai-points span {
-    min-height: 72px;
+    min-height: 54px;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    padding: 14px 0 14px 18px;
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .ai-points span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
   }
 }
 
