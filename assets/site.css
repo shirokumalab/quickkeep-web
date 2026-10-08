@@ -492,20 +492,6 @@ footer {
   font-size: 20px;
 }
 
-.assurance-section {
-  position: relative;
-}
-
-.assurance-section::before {
-  content: "";
-  display: block;
-  width: 68px;
-  height: 4px;
-  border-radius: 999px;
-  background: var(--accent);
-  margin-bottom: 24px;
-}
-
 .split {
   display: grid;
   grid-template-columns: 1fr minmax(250px, 360px);
