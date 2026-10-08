@@ -830,25 +830,15 @@ footer {
 }
 
 .feature {
-  padding: 0 clamp(18px, 3vw, 38px) 0 0;
-  border-right: 1px solid var(--line);
+  padding: 20px clamp(12px, 2vw, 24px) 0 0;
+  border-top: 1px solid var(--line-strong);
   position: relative;
-  transition: transform 180ms ease, color 180ms ease;
+  transition: transform 180ms ease, border-color 180ms ease;
 }
 
 .feature::before,
 .process-grid article::before,
 .assurance-grid article::before {
-  content: "";
-  display: block;
-  width: 34px;
-  height: 3px;
-  margin-bottom: 18px;
-  border-radius: 999px;
-  background: var(--accent);
-}
-
-.process-grid article::before {
   display: none;
 }
 
@@ -856,10 +846,6 @@ footer {
 .process-grid article:hover,
 .assurance-grid article:hover {
   transform: translateY(-3px);
-}
-
-.feature:last-child {
-  border-right: 0;
 }
 
 .feature h3 {
@@ -879,13 +865,7 @@ footer {
 }
 
 .process-grid::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(53, 185, 154, 0.55), rgba(53, 185, 154, 0.12));
+  display: none;
 }
 
 .process-grid article,
@@ -894,10 +874,6 @@ footer {
   padding-top: 20px;
   padding-right: clamp(12px, 2vw, 24px);
   transition: transform 180ms ease, border-color 180ms ease;
-}
-
-.process-grid article {
-  border-top: 0;
 }
 
 .process-grid span {
@@ -914,8 +890,6 @@ footer {
   font-weight: 800;
   letter-spacing: 0.08em;
   margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
 }
 
 .process-grid h3,
@@ -1236,34 +1210,19 @@ footer {
   }
 
   .feature {
-    padding: 0 0 20px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    padding: 20px 0 0;
   }
 
   .process-grid::before {
-    top: 0;
-    bottom: 0;
-    left: 24px;
-    right: auto;
-    width: 1px;
-    height: auto;
-    background: linear-gradient(180deg, rgba(53, 185, 154, 0.55), rgba(53, 185, 154, 0.10));
+    display: none;
   }
 
   .process-grid article {
-    padding-left: 56px;
-    position: relative;
+    padding-left: 0;
   }
 
   .process-grid span {
-    position: absolute;
-    top: 18px;
-    left: 0;
-  }
-
-  .feature:last-child {
-    border-bottom: 0;
+    position: static;
   }
 }
 
