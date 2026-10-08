@@ -328,16 +328,6 @@ footer {
   list-style: none;
 }
 
-.mobile-nav summary::before {
-  content: "";
-  width: 15px;
-  height: 10px;
-  margin-right: 8px;
-  border-top: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  box-shadow: 0 4px 0 currentColor;
-}
-
 .mobile-nav summary::-webkit-details-marker {
   display: none;
 }
@@ -900,6 +890,10 @@ footer {
   padding-top: 20px;
   padding-right: clamp(12px, 2vw, 24px);
   transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.process-grid article {
+  border-top: 0;
 }
 
 .process-grid span {
