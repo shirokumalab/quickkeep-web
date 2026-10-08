@@ -257,8 +257,9 @@ footer {
 .link-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 26px;
+  align-items: center;
 }
 
 .button,
@@ -290,6 +291,60 @@ footer {
 .link-row a:hover {
   transform: translateY(-1px);
   border-color: var(--accent);
+}
+
+.app-store-badge {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 14px;
+  padding: 8px 17px 8px 13px;
+  color: #fff;
+  background: #101412;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 34px rgba(16, 20, 18, 0.18);
+}
+
+.app-store-badge small,
+.app-store-badge strong {
+  display: block;
+  color: #fff;
+  line-height: 1.05;
+}
+
+.app-store-badge small {
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.78;
+}
+
+.app-store-badge strong {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.app-store-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.32)),
+    var(--accent);
+  position: relative;
+}
+
+.app-store-icon::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 7px;
+  bottom: 7px;
+  border: 3px solid #fff;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
 }
 
 .hero-meta {
