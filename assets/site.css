@@ -641,8 +641,11 @@ footer {
   margin: 0 auto;
   padding: 22px 0 42px;
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
 }
 
 .sub-page main {
@@ -692,6 +695,7 @@ footer {
 
 .sub-page footer {
   padding-top: 28px;
+  text-align: center;
 }
 
 .sub-page .back {
