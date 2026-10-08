@@ -537,26 +537,23 @@ footer {
 
 .final-cta {
   margin-bottom: 0;
-  background: #101b17;
-  border-color: #101b17;
-  border-radius: 24px;
-  color: #f5fbf8;
-  padding: clamp(34px, 6vw, 54px);
+  color: var(--text);
+  padding: clamp(56px, 8vw, 94px) 0;
 }
 
 .final-cta p,
 .final-cta .eyebrow {
-  color: rgba(245, 251, 248, 0.72);
+  color: var(--muted);
 }
 
 .final-cta h2 {
-  color: #fff;
+  color: var(--text);
 }
 
 .final-cta .link-row a {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  background: var(--card);
+  border-color: var(--line);
 }
 
 .site-footer {
