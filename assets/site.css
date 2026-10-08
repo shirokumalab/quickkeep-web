@@ -339,6 +339,27 @@ footer {
   transform: rotate(8deg);
 }
 
+.screenshot-track {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  position: relative;
+  z-index: 1;
+}
+
+.screenshot-track::-webkit-scrollbar {
+  display: none;
+}
+
+.screenshot-slide {
+  flex: 0 0 100%;
+  display: grid;
+  place-items: center;
+  scroll-snap-align: center;
+}
+
 .phone-frame {
   width: min(100%, 430px);
   aspect-ratio: 0.52;
@@ -742,10 +763,6 @@ footer {
     min-height: auto;
     padding-top: 26px;
     gap: 34px;
-  }
-
-  .hero-visual {
-    order: -1;
   }
 
   .phone-frame {
