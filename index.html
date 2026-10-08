@@ -3,93 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuickKeep</title>
-  <meta name="description" content="QuickKeepの公式情報ページです。">
-  <style>
-    :root {
-      color-scheme: light dark;
-      --accent: #35b99a;
-      --text: #17201d;
-      --muted: #68736f;
-      --bg: #f7f9f8;
-      --card: #ffffff;
-      --line: #e3e9e6;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #edf5f2;
-        --muted: #a9b6b1;
-        --bg: #111614;
-        --card: #19201d;
-        --line: #2b3531;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.75;
-    }
-    main {
-      width: min(880px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 56px 0;
-    }
-    header, section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 28px;
-      margin-bottom: 18px;
-    }
-    h1, h2 { line-height: 1.25; margin: 0 0 12px; }
-    p { margin: 0 0 12px; color: var(--muted); }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-    a {
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-    }
-    nav a {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 14px;
-      background: color-mix(in srgb, var(--accent) 9%, transparent);
-    }
-    footer {
-      color: var(--muted);
-      font-size: 13px;
-      padding: 8px 2px;
-    }
-  </style>
+  <title>QuickKeep - あとで見つかる、かんたん保存。</title>
+  <meta name="description" content="QuickKeepは、Webページ、画像、PDF、テキストなどを共有からすばやく保存し、あとで見つけ直しやすくするiOSアプリです。">
+  <link rel="stylesheet" href="./assets/site.css">
 </head>
-<body>
-  <main>
-    <header>
-      <h1>QuickKeep</h1>
-      <p>あとで見つかる、かんたん保存。</p>
-      <nav aria-label="QuickKeep関連ページ">
-        <a href="./guide/">使い方</a>
-        <a href="./support/">サポート・FAQ</a>
-        <a href="./terms/">利用規約</a>
-        <a href="./privacy/">プライバシーポリシー</a>
-        <a href="./commerce/">特定商取引法に基づく表記</a>
-      </nav>
-    </header>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="QuickKeep ホーム">
+      <img class="brand-logo" src="./assets/brand/logo-horizontal.svg" alt="QuickKeep">
+    </a>
+    <nav class="site-nav" aria-label="QuickKeep関連ページ">
+      <a href="./guide/">使い方</a>
+      <a href="./support/">FAQ</a>
+      <a href="./privacy/">プライバシー</a>
+    </nav>
+  </header>
 
-    <section>
-      <h2>このページについて</h2>
-      <p>QuickKeepの公開情報を掲載するための準備ページです。本文は公開前に確定します。</p>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <img class="hero-logo" src="./assets/brand/logo-horizontal-tagline.svg" alt="QuickKeep - Save now. Find it later.">
+        <p class="eyebrow">Save now. Find it later.</p>
+        <h1 id="hero-title">あとで見つかる、<br>かんたん保存。</h1>
+        <p class="lead">QuickKeepは、あとで必要になるWebページ、画像、PDF、テキストなどを共有からすばやく保存し、探し直す負担を軽くするiOSアプリです。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="./guide/">使い方を見る</a>
+          <a class="button secondary" href="./support/">FAQを見る</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="QuickKeepのホーム画面イメージ">
+        <div class="visual-stage">
+          <img class="stage-icon" src="./assets/brand/logo-icon.svg" alt="" aria-hidden="true">
+          <div class="phone-frame">
+            <div class="phone-island"></div>
+            <div class="app-top">
+              <div class="segmented">
+                <span class="active">ホーム</span>
+                <span>コレクション</span>
+              </div>
+              <div class="add-button">+</div>
+            </div>
+            <div class="item-card featured">
+              <div class="item-icon compass"></div>
+              <div>
+                <strong>週末に読む記事</strong>
+                <small>10月8日 11:20</small>
+                <p>あとで設計判断を見直す</p>
+              </div>
+            </div>
+            <div class="item-card">
+              <div class="item-icon pdf"></div>
+              <div>
+                <strong>旅行計画メモ.pdf</strong>
+                <small>10月8日 09:45</small>
+                <p>宿、移動、持ち物の候補</p>
+              </div>
+            </div>
+            <div class="bottom-tabs">
+              <span>ホーム</span>
+              <span>検索</span>
+              <span>設定</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>© QuickKeep</footer>
+    <section class="feature-band" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">What QuickKeep does</p>
+        <h2 id="features-title">保存するときに、整理を求めない。</h2>
+        <p>まず残す。あとで見つける。QuickKeepはその順番を大切にします。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="feature-icon">01</span>
+          <h3>共有から保存</h3>
+          <p>Safari、写真、ファイルなどからQuickKeepを選ぶだけ。保存時にフォルダやタグを決める必要はありません。</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon">02</span>
+          <h3>このデバイスから始める</h3>
+          <p>まずはローカル保存と検索を中心に。同期や外部サービスに頼りすぎない、落ち着いた保存体験を目指します。</p>
+        </article>
+        <article class="feature">
+          <span class="feature-icon">03</span>
+          <h3>あとで探しやすく</h3>
+          <p>タイトル、メモ、カテゴリ、タグを手がかりに、保存したものを見つけ直せます。必要に応じて整理情報も編集できます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section split" aria-labelledby="materials-title">
+      <div>
+        <p class="eyebrow">For many formats</p>
+        <h2 id="materials-title">Webだけじゃない。</h2>
+        <p>URL、画像、PDF、テキスト、動画、ファイル。あとで必要になりそうなものを、ひとつの場所に集められるように設計しています。</p>
+      </div>
+      <div class="format-stack" aria-label="保存形式の例">
+        <span>Webページ</span>
+        <span>画像</span>
+        <span>PDF</span>
+        <span>テキスト</span>
+        <span>動画</span>
+        <span>ファイル</span>
+      </div>
+    </section>
+
+    <section class="content-section final-cta" aria-labelledby="info-title">
+      <p class="eyebrow">Information</p>
+      <h2 id="info-title">公開情報</h2>
+      <p>アプリの利用前に確認できる情報をまとめています。本文は公開準備に合わせて更新します。</p>
+      <div class="link-row">
+        <a href="./terms/">利用規約</a>
+        <a href="./privacy/">プライバシーポリシー</a>
+        <a href="./support/">サポート・FAQ</a>
+        <a href="./commerce/">特定商取引法に基づく表記</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <span>© QuickKeep</span>
+    <span>あとで見つかる、かんたん保存。</span>
+  </footer>
 </body>
 </html>
