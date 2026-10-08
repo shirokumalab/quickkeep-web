@@ -44,6 +44,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
@@ -53,6 +59,11 @@ body {
     var(--bg);
   line-height: 1.75;
   text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  max-width: 100%;
 }
 
 main {
