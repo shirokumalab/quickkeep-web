@@ -682,3 +682,14 @@ footer {
     border-radius: 12px;
   }
 }
+
+.home-page main > .hero,
+.home-page main > .feature-band,
+.home-page main > .content-section:not(.final-cta) {
+  background: transparent;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
