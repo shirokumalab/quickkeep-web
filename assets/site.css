@@ -572,7 +572,7 @@ footer {
   main,
   .site-header,
   .site-footer {
-    width: min(100% - 48px, 1040px);
+    width: min(calc(100% - 48px), 1040px);
   }
 
   .hero {
@@ -593,13 +593,14 @@ footer {
   main,
   .site-header,
   .site-footer {
-    width: min(100% - 32px, 720px);
+    width: min(calc(100% - 32px), 720px);
   }
 
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
     padding-top: 26px;
+    gap: 34px;
   }
 
   .hero-visual {
@@ -634,6 +635,12 @@ footer {
 }
 
 @media (max-width: 560px) {
+  main,
+  .site-header,
+  .site-footer {
+    width: calc(100% - 32px);
+  }
+
   .site-header,
   .site-footer {
     align-items: flex-start;
@@ -645,17 +652,33 @@ footer {
   }
 
   .hero h1 {
-    font-size: 48px;
+    max-width: 100%;
+    font-size: clamp(34px, 11vw, 46px);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
   }
 
   .hero-logo {
-    width: min(300px, 86vw);
+    width: min(240px, 82vw);
     margin-bottom: 22px;
   }
 
+  .lead {
+    font-size: 17px;
+  }
+
   .visual-stage {
-    min-height: 560px;
+    width: 100%;
+    min-height: 520px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 18px;
+  }
+
+  .phone-frame {
+    width: min(100%, 300px);
+  }
+
+  .hero-meta span {
+    border-radius: 12px;
   }
 }
