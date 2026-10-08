@@ -1353,30 +1353,45 @@ footer {
 
   .ai-points {
     grid-template-columns: 1fr;
-    gap: 0;
-    border-top: 1px solid var(--line);
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid rgba(53, 185, 154, 0.20);
+    border-radius: 24px;
+    background:
+      linear-gradient(145deg, rgba(53, 185, 154, 0.12), transparent 58%),
+      rgba(255, 255, 255, 0.54);
+    box-shadow: 0 18px 48px rgba(23, 32, 29, 0.08);
   }
 
   .ai-points span {
-    min-height: 54px;
+    min-height: 62px;
     align-items: center;
-    border: 0;
-    border-bottom: 1px solid var(--line);
-    border-radius: 0;
-    padding: 14px 0 14px 18px;
-    background: transparent;
-    box-shadow: none;
+    border: 1px solid rgba(53, 185, 154, 0.18);
+    border-radius: 17px;
+    padding: 14px 16px 14px 54px;
+    background:
+      radial-gradient(circle at 27px 50%, rgba(255, 255, 255, 0.92) 0 12px, transparent 13px),
+      var(--card);
+    box-shadow: 0 10px 28px rgba(23, 32, 29, 0.06);
     position: relative;
   }
 
   .ai-points span::before {
     content: "";
     position: absolute;
-    left: 0;
-    width: 6px;
-    height: 6px;
+    left: 22px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: var(--accent);
+  }
+
+  .ai-points span:nth-child(2) {
+    margin-left: 18px;
+  }
+
+  .ai-points span:nth-child(3) {
+    margin-left: 36px;
   }
 }
 
