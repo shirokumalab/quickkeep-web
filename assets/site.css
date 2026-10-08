@@ -634,10 +634,10 @@ footer {
 }
 
 .sub-page .page-hero h1 {
-  font-size: clamp(34px, 4.8vw, 58px);
-  line-height: 1.14;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.22;
   letter-spacing: 0;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .sub-page .page-hero p {
@@ -652,9 +652,9 @@ footer {
 }
 
 .sub-page section h2 {
-  font-size: clamp(30px, 4vw, 52px);
-  line-height: 1.12;
-  margin-bottom: 18px;
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.24;
+  margin-bottom: 14px;
 }
 
 .sub-page footer {
