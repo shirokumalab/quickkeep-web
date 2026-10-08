@@ -848,6 +848,10 @@ footer {
   background: var(--accent);
 }
 
+.process-grid article::before {
+  display: none;
+}
+
 .feature:hover,
 .process-grid article:hover,
 .assurance-grid article:hover {
