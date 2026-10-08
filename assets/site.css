@@ -201,6 +201,7 @@ footer {
 }
 
 .home-page .hero,
+.home-page .app-store-strip,
 .home-page .feature-band,
 .home-page .content-section {
   background: transparent;
@@ -345,6 +346,24 @@ footer {
   border: 3px solid #fff;
   border-top: 0;
   border-radius: 0 0 5px 5px;
+}
+
+.app-store-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(26px, 4vw, 40px) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.app-store-strip p {
+  margin-bottom: 0;
+}
+
+.app-store-strip .eyebrow {
+  margin-bottom: 6px;
 }
 
 .hero-meta {
@@ -573,7 +592,6 @@ footer {
 .home-page .content-section {
   padding: clamp(64px, 8vw, 104px) 0;
   margin-bottom: 0;
-  border-top: 1px solid var(--line);
 }
 
 .section-heading {
@@ -948,6 +966,12 @@ footer {
 
   .lead {
     font-size: 17px;
+  }
+
+  .app-store-strip {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .visual-stage {
