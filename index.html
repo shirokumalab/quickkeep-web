@@ -13,6 +13,8 @@
       <img class="brand-logo" src="./assets/brand/logo-horizontal.svg" alt="QuickKeep">
     </a>
     <nav class="site-nav" aria-label="QuickKeep関連ページ">
+      <a href="#features">特徴</a>
+      <a href="#policy">方針</a>
       <a href="./guide/">使い方</a>
       <a href="./support/">FAQ</a>
       <a href="./privacy/">プライバシー</a>
@@ -23,12 +25,17 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <img class="hero-logo" src="./assets/brand/logo-horizontal-tagline.svg" alt="QuickKeep - Save now. Find it later.">
-        <p class="eyebrow">Save now. Find it later.</p>
-        <h1 id="hero-title">あとで見つかる、<br>かんたん保存。</h1>
-        <p class="lead">QuickKeepは、あとで必要になるWebページ、画像、PDF、テキストなどを共有からすばやく保存し、探し直す負担を軽くするiOSアプリです。</p>
+        <p class="eyebrow">Product Information</p>
+        <h1 id="hero-title">保存したい瞬間を止めない、iOSのための保存アプリ。</h1>
+        <p class="lead">QuickKeepは、Webページ、画像、PDF、テキスト、動画、ファイルを共有からすばやく保存し、必要なときに見つけ直しやすくするアプリです。</p>
         <div class="hero-actions">
           <a class="button primary" href="./guide/">使い方を見る</a>
-          <a class="button secondary" href="./support/">FAQを見る</a>
+          <a class="button secondary" href="#info">公開情報</a>
+        </div>
+        <div class="hero-meta" aria-label="QuickKeepの方針">
+          <span>QuickKeepアカウント不要</span>
+          <span>保存時の整理入力なし</span>
+          <span>保存内容を広告ターゲティングに使用しない</span>
         </div>
       </div>
 
@@ -70,27 +77,48 @@
       </div>
     </section>
 
-    <section class="feature-band" aria-labelledby="features-title">
+    <section class="feature-band" id="features" aria-labelledby="features-title">
       <div class="section-heading">
-        <p class="eyebrow">What QuickKeep does</p>
-        <h2 id="features-title">保存するときに、整理を求めない。</h2>
-        <p>まず残す。あとで見つける。QuickKeepはその順番を大切にします。</p>
+        <p class="eyebrow">Core Features</p>
+        <h2 id="features-title">保存から見つけ直しまでを、ひとつの流れに。</h2>
+        <p>QuickKeepは、保存の手間を増やさず、あとで探すための手がかりを残すことを重視しています。</p>
       </div>
       <div class="feature-grid">
         <article class="feature">
-          <span class="feature-icon">01</span>
           <h3>共有から保存</h3>
           <p>Safari、写真、ファイルなどからQuickKeepを選ぶだけ。保存時にフォルダやタグを決める必要はありません。</p>
         </article>
         <article class="feature">
-          <span class="feature-icon">02</span>
           <h3>このデバイスから始める</h3>
           <p>まずはローカル保存と検索を中心に。同期や外部サービスに頼りすぎない、落ち着いた保存体験を目指します。</p>
         </article>
         <article class="feature">
-          <span class="feature-icon">03</span>
           <h3>あとで探しやすく</h3>
           <p>タイトル、メモ、カテゴリ、タグを手がかりに、保存したものを見つけ直せます。必要に応じて整理情報も編集できます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section process-section" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="eyebrow">Workflow</p>
+        <h2 id="process-title">使い方はシンプルです。</h2>
+      </div>
+      <div class="process-grid">
+        <article>
+          <span>01</span>
+          <h3>共有する</h3>
+          <p>残したいページやファイルから、iOSの共有シートを開きます。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>保存する</h3>
+          <p>QuickKeepを選ぶと、最低限の確認だけで保存できます。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>見つけ直す</h3>
+          <p>検索、カテゴリ、タグ、コレクションを手がかりに必要なものへ戻れます。</p>
         </article>
       </div>
     </section>
@@ -111,10 +139,32 @@
       </div>
     </section>
 
-    <section class="content-section final-cta" aria-labelledby="info-title">
+    <section class="content-section assurance-section" id="policy" aria-labelledby="policy-title">
+      <div class="section-heading">
+        <p class="eyebrow">Policy</p>
+        <h2 id="policy-title">QuickKeepが大切にしていること。</h2>
+        <p>便利さだけでなく、保存した内容をどう扱うかを明確にすることも、製品の品質だと考えています。</p>
+      </div>
+      <div class="assurance-grid">
+        <article>
+          <h3>独自アカウントを作りません</h3>
+          <p>QuickKeep専用の会員登録やログインを前提にしない設計です。</p>
+        </article>
+        <article>
+          <h3>保存内容を広告に使いません</h3>
+          <p>保存した内容を広告ターゲティングのために利用しない方針です。</p>
+        </article>
+        <article>
+          <h3>整理を急がせません</h3>
+          <p>保存時のカテゴリ・タグ入力を必須にせず、まず残せる体験を優先します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section final-cta" id="info" aria-labelledby="info-title">
       <p class="eyebrow">Information</p>
       <h2 id="info-title">公開情報</h2>
-      <p>アプリの利用前に確認できる情報をまとめています。本文は公開準備に合わせて更新します。</p>
+      <p>利用条件、プライバシー、サポート情報を以下にまとめています。本文は公開準備に合わせて更新します。</p>
       <div class="link-row">
         <a href="./terms/">利用規約</a>
         <a href="./privacy/">プライバシーポリシー</a>
