@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QuickKeep - あとで見つかる、かんたん保存。</title>
   <meta name="description" content="QuickKeepは、Webページ、画像、PDF、テキストなどを共有からすばやく保存し、あとで見つけ直しやすくするiOSアプリです。">
-  <link rel="stylesheet" href="./assets/site.css?v=20261008-2000">
+  <link rel="stylesheet" href="./assets/site.css?v=20261008-2310">
 </head>
 <body class="home-page" id="top">
   <header class="site-header">
@@ -162,14 +162,25 @@
         <p class="eyebrow">For many formats</p>
         <h2 id="materials-title">Webだけじゃない。</h2>
         <p>URL、画像、PDF、テキスト、動画、ファイル。あとで必要になりそうなものを、ひとつの場所に集められるように設計しています。</p>
+        <p class="note-line">対応端末では、保存後に端末内AIが内容を見てカテゴリやタグの候補を提案します。保存そのものは通信やAIを待たずに完了します。</p>
       </div>
-      <div class="format-stack" aria-label="保存形式の例">
-        <span>Webページ</span>
-        <span>画像</span>
-        <span>PDF</span>
-        <span>テキスト</span>
-        <span>動画</span>
-        <span>ファイル</span>
+      <div class="format-flow" aria-label="保存形式と整理候補の例">
+        <div class="format-source">
+          <span>Webページ</span>
+          <span>画像</span>
+          <span>PDF</span>
+          <span>テキスト</span>
+          <span>動画</span>
+          <span>ファイル</span>
+        </div>
+        <div class="format-bridge" aria-hidden="true">
+          <span></span>
+        </div>
+        <div class="local-suggestion">
+          <small>On-device AI</small>
+          <strong>自動判別は端末内で</strong>
+          <p>カテゴリ候補、タグ候補、あとで探すための手がかりを、保存後にローカルで補助します。</p>
+        </div>
       </div>
     </section>
 
