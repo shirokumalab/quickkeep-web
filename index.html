@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QuickKeep - あとで見つかる、かんたん保存。</title>
   <meta name="description" content="QuickKeepは、Webページ、画像、PDF、テキストなどを共有からすばやく保存し、あとで見つけ直しやすくするiOSアプリです。">
-  <link rel="stylesheet" href="./assets/site.css?v=20261008-1920">
+  <link rel="stylesheet" href="./assets/site.css?v=20261008-1930">
 </head>
 <body class="home-page">
   <header class="site-header">
@@ -36,7 +36,10 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <img class="hero-logo" src="./assets/brand/logo-horizontal-tagline.svg" alt="QuickKeep - Save now. Find it later.">
+        <picture class="hero-logo-wrap">
+          <source srcset="./assets/brand/logo-horizontal-tagline-dark.svg" media="(prefers-color-scheme: dark)">
+          <img class="hero-logo" src="./assets/brand/logo-horizontal-tagline.svg" alt="QuickKeep - Save now. Find it later.">
+        </picture>
         <p class="eyebrow">Product Information</p>
         <h1 id="hero-title">保存したい瞬間を止めない、iOSのための保存アプリ。</h1>
         <p class="lead">QuickKeepは、Webページ、画像、PDF、テキスト、動画、ファイルを共有からすばやく保存し、必要なときに見つけ直しやすくするアプリです。</p>

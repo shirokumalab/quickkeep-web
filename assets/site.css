@@ -266,11 +266,16 @@ footer {
   animation: fadeUp 720ms ease both;
 }
 
-.hero-logo {
+.hero-logo-wrap {
   display: block;
   width: min(340px, 84vw);
-  height: auto;
   margin-bottom: 30px;
+}
+
+.hero-logo {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .eyebrow {
@@ -947,6 +952,11 @@ footer {
     flex-direction: row;
   }
 
+  .site-footer {
+    align-items: center;
+    text-align: center;
+  }
+
   .brand-logo {
     width: 156px;
   }
@@ -1011,7 +1021,7 @@ footer {
     overflow-wrap: anywhere;
   }
 
-  .hero-logo {
+  .hero-logo-wrap {
     width: min(240px, 82vw);
     margin-bottom: 22px;
   }
