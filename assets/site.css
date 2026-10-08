@@ -146,6 +146,14 @@ footer {
   padding: 52px 0 60px;
 }
 
+.home-page .hero,
+.home-page .feature-band,
+.home-page .content-section {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
 .hero-copy {
   max-width: 660px;
 }
@@ -418,6 +426,13 @@ footer {
   margin-bottom: 20px;
 }
 
+.home-page .feature-band,
+.home-page .content-section {
+  padding: clamp(56px, 8vw, 94px) 0;
+  margin-bottom: 0;
+  border-top: 1px solid var(--line);
+}
+
 .section-heading {
   max-width: 720px;
   margin-bottom: 24px;
@@ -435,10 +450,12 @@ footer {
 }
 
 .feature {
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--soft);
-  padding: 22px;
+  padding: 0 22px 0 0;
+  border-right: 1px solid var(--line);
+}
+
+.feature:last-child {
+  border-right: 0;
 }
 
 .feature h3 {
@@ -457,6 +474,7 @@ footer {
 .assurance-grid article {
   border-top: 1px solid var(--line-strong);
   padding-top: 20px;
+  padding-right: 18px;
 }
 
 .process-grid span {
@@ -475,9 +493,17 @@ footer {
 }
 
 .assurance-section {
-  background:
-    linear-gradient(135deg, rgba(53, 185, 154, 0.10), transparent 46%),
-    var(--card);
+  position: relative;
+}
+
+.assurance-section::before {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+  margin-bottom: 24px;
 }
 
 .split {
@@ -513,7 +539,9 @@ footer {
   margin-bottom: 0;
   background: #101b17;
   border-color: #101b17;
+  border-radius: 24px;
   color: #f5fbf8;
+  padding: clamp(34px, 6vw, 54px);
 }
 
 .final-cta p,
@@ -565,6 +593,16 @@ footer {
   .assurance-grid,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .feature {
+    padding: 0 0 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feature:last-child {
+    border-bottom: 0;
   }
 }
 
