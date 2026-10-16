@@ -689,6 +689,14 @@ footer {
   transform: rotate(8deg);
 }
 
+.app-screenshot {
+  width: min(100%, 360px);
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 24px 58px rgba(0, 0, 0, 0.26));
+  animation: floatStage 6s ease-in-out 900ms infinite;
+}
+
 .screenshot-track {
   width: 100%;
   display: flex;
