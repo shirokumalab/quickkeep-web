@@ -1193,19 +1193,35 @@ footer {
 }
 
 .social-links a {
-  min-height: 32px;
+  width: 36px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 4px 12px;
+  padding: 8px;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.56);
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
   transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.social-links svg rect,
+.social-links svg circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+}
+
+.social-links svg .fill-dot {
+  fill: currentColor;
+  stroke: none;
 }
 
 .social-links a:hover {
