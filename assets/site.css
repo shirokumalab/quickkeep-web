@@ -401,11 +401,6 @@ footer {
   transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }
 
-.site-nav .top-link {
-  color: var(--text);
-  background: rgba(53, 185, 154, 0.11);
-}
-
 .site-nav a:hover {
   color: var(--text);
   background: var(--soft);
