@@ -209,7 +209,7 @@
       url.searchParams.set("lang", select.value);
       location.assign(url);
     });
-    document.querySelector(".site-header")?.append(picker);
+    document.querySelector(".site-footer, .sub-page main > footer")?.append(picker);
   }
 
   function addLegalNotice(locale) {
