@@ -1505,24 +1505,25 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--line);
-    border-radius: 999px;
+    border: 0;
+    border-radius: 0;
     padding: 0;
     color: var(--text);
-    background: rgba(255, 255, 255, 0.78);
+    background: transparent;
     font-size: 13px;
     font-weight: 800;
     cursor: pointer;
   }
 
   .mobile-nav summary img {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
   }
 
-  .mobile-nav[open] summary {
-    border-color: var(--accent);
-    color: var(--accent-deep);
+  .mobile-nav summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 8px;
   }
 
   .mobile-nav nav {
