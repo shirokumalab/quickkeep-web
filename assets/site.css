@@ -1468,7 +1468,7 @@ footer {
 
 .sub-page .faq-answer-with-guide {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.78fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
   gap: 20px;
   align-items: start;
 }
@@ -1478,6 +1478,7 @@ footer {
 }
 
 .sub-page .faq-guide {
+  width: min(100%, 280px);
   margin: 0 0 18px;
 }
 
@@ -1555,6 +1556,10 @@ footer {
   .ai-section,
   .sub-page .faq-answer-with-guide {
     grid-template-columns: 1fr;
+  }
+
+  .sub-page .faq-guide {
+    margin-inline: auto;
   }
 
   .feature {
