@@ -1380,6 +1380,92 @@ footer {
   color: var(--muted);
 }
 
+.sub-page .screen-figure {
+  width: min(100%, 360px);
+  margin: 26px auto 0;
+}
+
+.sub-page .screen-figure img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 20px 46px rgba(23, 32, 29, 0.14);
+}
+
+.sub-page .screen-figure figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.sub-page .page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sub-page .page-links a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 18px;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.sub-page .legal-list,
+.sub-page .legal-list li {
+  max-width: 900px;
+}
+
+.sub-page .legal-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding-left: 1.4em;
+}
+
+.sub-page .legal-list li::marker {
+  color: var(--accent-deep);
+}
+
+.sub-page .legal-note {
+  margin-top: 22px;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.sub-page .faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+}
+
+.sub-page .faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0 18px;
+  background: var(--card);
+}
+
+.sub-page .faq-list summary {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sub-page .faq-list details p {
+  padding-bottom: 18px;
+}
+
 @media (max-width: 1180px) {
   :root {
     --page-gutter: 48px;

@@ -213,7 +213,7 @@
   }
 
   function addLegalNotice(locale) {
-    const legalPages = ["/privacy/", "/terms/", "/commerce/"];
+    const legalPages = ["/privacy/", "/terms/"];
     if (locale === "ja" || !legalPages.some((path) => location.pathname.endsWith(path))) return;
     const notice = document.createElement("p");
     notice.className = "translation-notice";
