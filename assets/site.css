@@ -1466,6 +1466,37 @@ footer {
   padding-bottom: 18px;
 }
 
+.sub-page .faq-answer-with-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.78fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.sub-page .faq-answer-with-guide p {
+  margin: 0;
+}
+
+.sub-page .faq-guide {
+  margin: 0 0 18px;
+}
+
+.sub-page .faq-guide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.sub-page .faq-guide figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
 @media (max-width: 1180px) {
   :root {
     --page-gutter: 48px;
@@ -1521,7 +1552,8 @@ footer {
   .assurance-grid,
   .final-cta,
   .split,
-  .ai-section {
+  .ai-section,
+  .sub-page .faq-answer-with-guide {
     grid-template-columns: 1fr;
   }
 
