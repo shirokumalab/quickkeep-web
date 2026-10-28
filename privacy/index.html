@@ -78,7 +78,8 @@
       <ul class="legal-list">
         <li>Apple Inc.：App StoreおよびStoreKitによる購入処理、利用者が有効にした場合のiCloud／CloudKitによる同期。<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a></li>
         <li>Google LLC：Google Mobile Ads SDKおよびGoogle User Messaging Platformによる広告配信と広告に関するプライバシー選択肢の提供。詳細は前項をご確認ください。</li>
-        <li>Cloudflare, Inc.：お問い合わせフォームから送信された情報を受信するCloudflare Workers。<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare プライバシーポリシー</a></li>
+        <li>Cloudflare, Inc.：お問い合わせフォームから送信された情報を受信・中継するCloudflare Workers。Cloudflare Workersは問い合わせ用データベースを使用しません。<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare プライバシーポリシー</a></li>
+        <li>Discord Inc.：Cloudflare Workersから、問い合わせ対応用の限定されたDiscordチャンネルへ問い合わせ情報を通知するDiscord Webhook。<a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Discord プライバシーポリシー</a></li>
         <li>GitHub, Inc.：本サイトの公開に用いるGitHub Pages。サイト閲覧時には、アクセスログ等が取り扱われる場合があります。<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub プライバシーステートメント</a></li>
       </ul>
     </section>
@@ -86,9 +87,10 @@
     <section id="contact-policy">
       <h2>5. お問い合わせに関するポリシー</h2>
       <p>お問い合わせは、本アプリの「設定」→「サポート」→「お問い合わせ」から送信できます。</p>
-      <p>フォームでは、問い合わせ種別、本文、返信を希望する場合のメールアドレスを受け取ります。これらの情報は、不具合、質問、要望への対応およびアプリの改善のために利用します。</p>
-      <p>バグ報告では、端末モデル、OSバージョン、QuickKeepのバージョン・ビルド番号を受け取る場合があります。保存した本文、検索履歴および端末識別子は自動送信しません。</p>
-      <p>お問い合わせ内容は、対応のためにCloudflare Workersを経由して運営へ送信されます。問い合わせ情報へのアクセスは、対応に必要な範囲に限定します。問い合わせ情報は、対応、記録管理および法令上必要な期間に限って保管し、不要になった時点で削除または匿名化するよう努めます。削除・開示・訂正その他の依頼は、対象の連絡先または問い合わせ日時が分かる形でお申し出ください。</p>
+      <p>フォームでは、問い合わせ種別、本文、返信を希望する場合のメールアドレス、および送信時刻を受け取ります。Cloudflare Workersは、問い合わせを区別して対応するため、送信ごとに日時とランダムな英数字からなる問い合わせ番号を生成します。これらの情報は、不具合、質問、要望への対応およびアプリの改善のために利用します。</p>
+      <p>バグ報告を選択した場合に限り、端末モデル（製品モデル名およびハードウェアモデル識別子）、OSバージョン、QuickKeepのバージョン・ビルド番号を追加で受け取ります。保存した本文、検索履歴、添付ファイル、端末を一意に識別するID（IDFA、IDFV、UDID等）は自動送信しません。</p>
+      <p>お問い合わせ内容およびバグ報告時の端末情報は、対応のためCloudflare Workersを経由して、運営者だけがアクセスできるDiscordの問い合わせ対応用チャンネルへ通知されます。Cloudflare Workersは問い合わせ用データベースを使用しません。問い合わせ情報を広告配信または販売目的に利用しません。</p>
+      <p>問い合わせ情報へのアクセスは、対応に必要な範囲に限定します。問い合わせ情報はDiscordの問い合わせ対応用チャンネルで、対応、記録管理および法令上必要な期間に限って保管し、不要になった時点で削除または匿名化するよう努めます。削除・開示・訂正その他の依頼は、問い合わせ番号、対象の連絡先または問い合わせ日時が分かる形でお申し出ください。</p>
     </section>
 
     <section>
@@ -99,7 +101,7 @@
     <section>
       <h2>7. 安全管理・ポリシーの変更</h2>
       <p>QuickKeep運営者は、問い合わせ情報へのアクセスを必要な範囲に限定し、不正なアクセス、漏えい、改ざんまたは滅失の防止に努めます。本ポリシーを変更する場合は、本サイトまたは本アプリ内で告知します。</p>
-      <p class="legal-note">制定日：2026年10月22日<br>最終改定日：2026年10月23日<br>個人情報の取扱事業者：QuickKeep運営者<br>お問い合わせ窓口：本アプリの「設定」→「サポート」→「お問い合わせ」<br>運営者の氏名および住所は、法令に基づくご請求があった場合、遅滞なく開示します。</p>
+      <p class="legal-note">制定日：2026年10月22日<br>最終改定日：2026年10月28日<br>個人情報の取扱事業者：QuickKeep運営者<br>お問い合わせ窓口：本アプリの「設定」→「サポート」→「お問い合わせ」<br>運営者の氏名および住所は、法令に基づくご請求があった場合、遅滞なく開示します。</p>
     </section>
 
   <footer class="site-footer">
