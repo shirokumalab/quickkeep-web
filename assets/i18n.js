@@ -13,7 +13,7 @@
   // [English, Korean, Simplified Chinese, Traditional Chinese]
   const translations = {
     "Product Information": ["Product Information", "제품 정보", "产品信息", "產品資訊"],
-    "Coming Soon": ["Coming soon", "출시 예정", "即将发布", "即將發布"],
+    "App Storeで配信中": ["Available on the App Store", "App Store에서 이용 가능", "已在 App Store 上架", "已在 App Store 上架"],
     "Core Features": ["Core features", "핵심 기능", "核心功能", "核心功能"],
     "Workflow": ["Workflow", "사용 흐름", "使用流程", "使用流程"],
     "For many formats": ["For many formats", "다양한 형식", "多种格式", "多種格式"],
@@ -45,10 +45,11 @@
     "クラウドAIに送らない": ["Not sent to cloud AI", "클라우드 AI로 보내지 않음", "不会发送给云端 AI", "不會傳送到雲端 AI"],
     "QuickKeepのホーム画面イメージ": ["QuickKeep home screen preview", "QuickKeep 홈 화면 미리보기", "QuickKeep 首页预览", "QuickKeep 首頁預覽"],
     "保存したアイテムが並ぶQuickKeepのホーム画面": ["QuickKeep home screen with saved items", "저장한 항목이 나열된 QuickKeep 홈 화면", "显示已保存项目的 QuickKeep 首页", "顯示已儲存項目的 QuickKeep 首頁"],
-    "QuickKeepの公開予定": ["QuickKeep availability", "QuickKeep 출시 예정", "QuickKeep 发布计划", "QuickKeep 發布計畫"],
-    "QuickKeepはApp Storeでの公開に向けて準備中です。公開後、この場所からストアページへ移動できるようになります。": ["QuickKeep is being prepared for release on the App Store. Once available, you will be able to reach its store page here.", "QuickKeep은 App Store 출시를 준비 중입니다. 출시 후 이곳에서 스토어 페이지로 이동할 수 있습니다.", "QuickKeep 正在准备在 App Store 上发布。发布后，可从此处前往商店页面。", "QuickKeep 正在準備於 App Store 發布。發布後，可從此處前往商店頁面。"],
+    "QuickKeepをApp Storeで入手": ["Get QuickKeep on the App Store", "App Store에서 QuickKeep 받기", "在 App Store 获取 QuickKeep", "在 App Store 取得 QuickKeep"],
+    "QuickKeepはApp Storeで配信中です。iPhoneやiPadにダウンロードして、保存をはじめましょう。": ["QuickKeep is now available on the App Store. Download it on your iPhone or iPad and start saving.", "QuickKeep을 App Store에서 이용할 수 있습니다. iPhone 또는 iPad에 다운로드하여 저장을 시작하세요.", "QuickKeep 已在 App Store 上架。下载到 iPhone 或 iPad，开始保存吧。", "QuickKeep 已在 App Store 上架。下載到 iPhone 或 iPad，開始儲存吧。"],
     "App Storeで": ["On the App Store", "App Store에서", "在 App Store 上", "在 App Store 上"],
-    "公開予定": ["Coming soon", "출시 예정", "即将发布", "即將發布"],
+    "ダウンロード": ["Download", "다운로드", "下载", "下載"],
+    "App StoreでQuickKeepを入手（新しいタブで開く）": ["Get QuickKeep on the App Store (opens in a new tab)", "App Store에서 QuickKeep 받기(새 탭에서 열림)", "在 App Store 获取 QuickKeep（在新标签页中打开）", "在 App Store 取得 QuickKeep（在新分頁中開啟）"],
     "保存からあとで探すまでを、ひとつの流れに。": ["One calm flow—from saving to finding later.", "저장부터 나중에 찾기까지, 하나의 흐름으로.", "从保存到稍后查找，一气呵成。", "從儲存到稍後尋找，一氣呵成。"],
     "QuickKeepは、保存の手間を増やさず、あとで探すための手がかりを残すことを重視しています。": ["QuickKeep keeps saving effortless while leaving useful clues for finding things later.", "QuickKeep은 저장의 수고를 늘리지 않으면서 나중에 찾을 단서를 남기는 데 집중합니다.", "QuickKeep 不增加保存负担，同时保留日后查找所需的线索。", "QuickKeep 不增加儲存負擔，同時保留日後尋找所需的線索。"],
     "共有から保存": ["Save from Share", "공유에서 저장", "从共享保存", "從分享儲存"],
