@@ -527,6 +527,13 @@ footer {
   line-height: 1.95;
 }
 
+.hero-supporting {
+  max-width: 640px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .hero-actions,
 .link-row {
   display: flex;
@@ -568,65 +575,22 @@ footer {
 }
 
 .app-store-badge {
-  min-height: 56px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  border-radius: 14px;
-  padding: 8px 17px 8px 13px;
-  color: #fff;
-  background: #101412;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 16px 34px rgba(16, 20, 18, 0.18);
-  animation: softPulse 4.8s ease-in-out infinite;
+  line-height: 0;
 }
 
-.app-store-badge small,
-.app-store-badge strong {
+.app-store-badge img {
   display: block;
-  color: #fff;
-  line-height: 1.05;
-}
-
-.app-store-badge small {
-  font-size: 11px;
-  font-weight: 700;
-  opacity: 0.78;
-}
-
-.app-store-badge strong {
-  margin-top: 3px;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.app-store-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.32)),
-    var(--accent);
-  position: relative;
-}
-
-.app-store-icon::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  top: 7px;
-  bottom: 7px;
-  border: 3px solid #fff;
-  border-top: 0;
-  border-radius: 0 0 5px 5px;
+  width: auto;
+  height: 48px;
 }
 
 .app-store-strip {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  gap: clamp(32px, 7vw, 96px);
   padding: clamp(26px, 4vw, 40px) 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -644,6 +608,59 @@ footer {
 
 .app-store-strip .eyebrow {
   margin-bottom: 6px;
+}
+
+.app-store-strip h2 {
+  max-width: 700px;
+  margin: 0 0 12px;
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.2;
+}
+
+.start-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.start-steps li {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.start-steps span {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  color: var(--accent-deep);
+  background: var(--soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.start-steps strong {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.start-steps small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .hero-meta {
@@ -999,7 +1016,8 @@ footer {
 
 .feature-grid,
 .process-grid,
-.assurance-grid {
+.assurance-grid,
+.usecase-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(18px, 3vw, 34px);
@@ -1007,7 +1025,8 @@ footer {
 
 .feature,
 .process-grid article,
-.assurance-grid article {
+.assurance-grid article,
+.usecase-grid article {
   border-top: 1px solid var(--line-strong);
   min-height: 150px;
   padding-top: 22px;
@@ -1024,14 +1043,16 @@ footer {
 
 .feature:hover,
 .process-grid article:hover,
-.assurance-grid article:hover {
+.assurance-grid article:hover,
+.usecase-grid article:hover {
   border-color: rgba(53, 185, 154, 0.42);
   transform: translateY(-3px);
 }
 
 .feature h3,
 .process-grid h3,
-.assurance-grid h3 {
+.assurance-grid h3,
+.usecase-grid h3 {
   margin: 0 0 8px;
   font-size: clamp(20px, 2vw, 26px);
 }
@@ -1551,6 +1572,7 @@ footer {
   .feature-grid,
   .process-grid,
   .assurance-grid,
+  .usecase-grid,
   .final-cta,
   .split,
   .ai-section,
@@ -1692,9 +1714,16 @@ footer {
   }
 
   .app-store-strip {
-    align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .start-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .start-steps li {
+    min-height: 0;
   }
 
   .visual-stage {
