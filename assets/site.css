@@ -534,6 +534,18 @@ footer {
   font-weight: 700;
 }
 
+.hero-trust {
+  margin-top: 24px;
+}
+
+.hero-trust-heading {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
 .hero-actions,
 .link-row {
   display: flex;
@@ -1713,7 +1725,7 @@ footer {
     font-size: 17px;
   }
 
-  .home-page .hero-actions {
+  .home-page .hero .hero-actions {
     width: min(100%, 320px);
     display: grid;
     grid-template-columns: 1fr;
@@ -1722,7 +1734,7 @@ footer {
     margin-top: 28px;
   }
 
-  .home-page .hero-actions .button.secondary {
+  .home-page .hero .hero-actions .button.secondary {
     min-height: 34px;
     border: 0;
     border-radius: 0;
@@ -1731,16 +1743,24 @@ footer {
     background: transparent;
   }
 
-  .home-page .hero-actions .button.secondary::after {
+  .home-page .hero .hero-actions .button.secondary::after {
     content: "→";
     margin-left: 8px;
     font-size: 1.1em;
   }
 
-  .hero-meta {
+  .home-page .hero-trust {
     margin-top: 28px;
-    padding-top: 18px;
-    border-top: 1px solid var(--line);
+    padding: 16px;
+    border: 1px solid rgba(53, 185, 154, 0.18);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
+  }
+
+  .home-page .hero-trust .hero-meta {
+    margin-top: 10px;
+    padding-top: 0;
+    border-top: 0;
   }
 
   .app-store-strip {

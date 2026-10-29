@@ -13,6 +13,7 @@
   // [English, Korean, Simplified Chinese, Traditional Chinese]
   const translations = {
     "Product Information": ["Product Information", "제품 정보", "产品信息", "產品資訊"],
+    "QuickKeepの方針": ["The QuickKeep approach", "QuickKeep의 방침", "QuickKeep 的理念", "QuickKeep 的理念"],
     "Save now. Find it later.": ["Save now. Find it later.", "지금 저장하고, 나중에 찾으세요.", "现在保存，稍后找到。", "現在儲存，稍後找到。"],
     "Start in minutes": ["Start in minutes", "몇 분 안에 시작하기", "几分钟即可开始", "幾分鐘即可開始"],
     "Made for everyday “later”": ["Made for everyday \"later\"", "일상의 ‘나중에’를 위해", "为日常的“稍后”而生", "為日常的「稍後」而生"],
