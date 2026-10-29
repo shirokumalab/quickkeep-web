@@ -14,6 +14,11 @@
   const translations = {
     "Product Information": ["Product Information", "제품 정보", "产品信息", "產品資訊"],
     "QuickKeepの方針": ["The QuickKeep approach", "QuickKeep의 방침", "QuickKeep 的理念", "QuickKeep 的理念"],
+    "安心して使える設計": ["Designed for peace of mind", "안심하고 사용할 수 있는 설계", "安心使用的设计", "安心使用的設計"],
+    "アカウント不要": ["No account needed", "계정 불필요", "无需帐户", "無需帳戶"],
+    "整理入力なし": ["No organizing required", "정리 입력 불필요", "无需整理输入", "無需整理輸入"],
+    "ローカル中心": ["Built around your device", "기기 중심", "以本地为中心", "以本機為主"],
+    "AIは端末内": ["AI stays on device", "AI는 기기 내에서", "AI 在设备端运行", "AI 在裝置端運行"],
     "Save now. Find it later.": ["Save now. Find it later.", "지금 저장하고, 나중에 찾으세요.", "现在保存，稍后找到。", "現在儲存，稍後找到。"],
     "Start in minutes": ["Start in minutes", "몇 분 안에 시작하기", "几分钟即可开始", "幾分鐘即可開始"],
     "Made for everyday “later”": ["Made for everyday \"later\"", "일상의 ‘나중에’를 위해", "为日常的“稍后”而生", "為日常的「稍後」而生"],
