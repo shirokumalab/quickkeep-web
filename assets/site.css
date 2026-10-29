@@ -1756,6 +1756,8 @@ footer {
     margin-top: 10px;
     padding-top: 0;
     border-top: 0;
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .app-store-strip {
@@ -1812,10 +1814,6 @@ footer {
     letter-spacing: -0.01em;
   }
 
-  .hero-meta {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .final-cta .hero-actions {
     width: 100%;
     display: grid;
@@ -1830,17 +1828,18 @@ footer {
 
   .final-cta .link-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 10px;
     margin-top: 20px;
   }
 
   .final-cta .link-row a {
     width: 100%;
-    min-height: 58px;
-    padding: 10px 8px;
+    min-height: 48px;
+    padding: 10px 16px;
     text-align: center;
-    line-height: 1.35;
+    line-height: 1.25;
+    white-space: nowrap;
   }
 
   .format-showcase {
