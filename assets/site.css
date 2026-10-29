@@ -1713,6 +1713,36 @@ footer {
     font-size: 17px;
   }
 
+  .home-page .hero-actions {
+    width: min(100%, 320px);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .home-page .hero-actions .button.secondary {
+    min-height: 34px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    color: var(--accent-deep);
+    background: transparent;
+  }
+
+  .home-page .hero-actions .button.secondary::after {
+    content: "→";
+    margin-left: 8px;
+    font-size: 1.1em;
+  }
+
+  .hero-meta {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+
   .app-store-strip {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -1769,6 +1799,33 @@ footer {
 
   .hero-meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .final-cta .hero-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .final-cta .hero-actions .button {
+    width: 100%;
+  }
+
+  .final-cta .link-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .final-cta .link-row a {
+    width: 100%;
+    min-height: 58px;
+    padding: 10px 8px;
+    text-align: center;
+    line-height: 1.35;
   }
 
   .format-showcase {
